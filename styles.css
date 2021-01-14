@@ -24,7 +24,6 @@ h1{
 .row{
     position: relative;
     margin: 0 auto;
-    height: 100px;
     width: 302px;
     clear: both;
 }
