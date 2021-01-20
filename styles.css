@@ -14,10 +14,13 @@
 .right{
     border-left: 1px solid black;
 }
+/*all 9 cells*/
 .row>div{
     float: left;
     height: 100px;
     width: 100px;
+    line-height: 100px;
+    font-size: 75px;
 }
 .row{
     margin: 0 auto;
