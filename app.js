@@ -1,11 +1,11 @@
+// let restart = ["", "", "", "", "", "", "", "", ""];
+// let win = false;
+// let winningCom = [cells[0, 1, 2], cells[3, 4, 5], cells[6, 7, 8], cells[0, 3, 6], cells[1, 4, 7], cells[2, 5, 8], cells[0, 4, 8], cells[2, 4, 6]];
 let cells = document.querySelectorAll(".row > div");
 let board = document.querySelector("#board");
 let button = document.querySelector("button");
 let winningStatement = document.querySelector("h3");
-// let winningCom = [cells[0, 1, 2], cells[3, 4, 5], cells[6, 7, 8], cells[0, 3, 6], cells[1, 4, 7], cells[2, 5, 8], cells[0, 4, 8], cells[2, 4, 6]];
 let whoseTurn = true;
-// let restart = ["", "", "", "", "", "", "", "", ""];
-// let win = false;
 board.addEventListener("click", checkWin);
 button.addEventListener("click", startOver);
 
@@ -99,13 +99,12 @@ function checkWin() {
         // win = true;
         board.addEventListener("click", startOver);
     } else {
-        if (cells[0].textContent != "" && cells[1].textContent != "" && cells[2].textContent != "" && cells[3].textContent != "" && cells[4].textContent != "" && cells[5].textContent != "" && cells[6].textContent != "" && cells[7].textContent != "" && cells[8].textContent != ""){
+        if (cells[0].textContent != "" && cells[1].textContent != "" && cells[2].textContent != "" && cells[3].textContent != "" && cells[4].textContent != "" && cells[5].textContent != "" && cells[6].textContent != "" && cells[7].textContent != "" && cells[8].textContent != "") {
             winningStatement.textContent = "Draw!";
             // win = true;
             board.addEventListener("click", startOver);
-            
         }
-}
+    }
 }
 
 
